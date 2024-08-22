@@ -10,7 +10,7 @@
 namespace polyfem::utils
 {
 	/// @brief Multiplicative scale factor when converting from double to integer coordinates.
-	static constexpr int64_t DOUBLE_TO_INT_SCALE_FACTOR = 1l << 51;
+	static constexpr int64_t DOUBLE_TO_INT_SCALE_FACTOR = (1LL << 51);
 
 	class PolygonClipping
 	{

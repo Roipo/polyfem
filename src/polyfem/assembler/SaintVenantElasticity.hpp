@@ -42,7 +42,7 @@ namespace polyfem::assembler
 	private:
 		ElasticityTensor elasticity_tensor_;
 
-		template <typename T, unsigned long N>
+		template <typename T, std::size_t N>
 		T stress(const std::array<T, N> &strain, const int j) const;
 
 		template <typename T>

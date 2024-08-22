@@ -29,7 +29,7 @@ namespace polyfem::assembler
 			return strain_from_disp_grad(jac);
 		}
 
-		template <typename T, unsigned long N>
+		template <typename T, std::size_t N>
 		T stress(const ElasticityTensor &elasticity_tensor, const std::array<T, N> &strain, const int j)
 		{
 			T res = elasticity_tensor(j, 0) * strain[0];

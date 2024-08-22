@@ -58,7 +58,7 @@ namespace polyfem::assembler
 		elasticity_tensor_.resize(size);
 	}
 
-	template <typename T, unsigned long N>
+	template <typename T, std::size_t N>
 	T SaintVenantElasticity::stress(const std::array<T, N> &strain, const int j) const
 	{
 		T res = elasticity_tensor_(j, 0) * strain[0];
